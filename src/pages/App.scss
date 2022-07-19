@@ -1,0 +1,56 @@
+@import '../styles/presets.scss';
+.box {
+    min-height: 30vh;
+    width: 50vw;
+    margin: 100px auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    .grid-avatar {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        .avatar {
+            width: 25%;
+            height: 25%;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 2px solid violet;
+        }
+    }
+    .grid-buttons {
+        margin-top: 6%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        button {
+            cursor: pointer;
+            border-radius: 8px;
+            width: 80%;
+            height: 10%;
+            padding: 10px;
+            font-size: large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: whitesmoke;
+            .icon-button {
+                margin-right: 0.1vw;
+                margin-bottom: 1px;
+            }
+        }
+        button:hover {
+            transform: scaleX(1.02);
+        }
+    }
+}
