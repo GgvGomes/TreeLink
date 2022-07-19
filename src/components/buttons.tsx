@@ -5,78 +5,49 @@ import { TbBrandDiscord } from 'react-icons/tb'
 import { FiGithub } from 'react-icons/fi'
 
 type PropsButon = {
-    class: 'instagram-btn' | 'whatsapp-btn' | 'linkedin-btn' | 'discord-btn' | 'github-btn',
+    class: string,
+    link: string,
     size: number,
 }
 
 export function Button(props: PropsButon){
     
+    var WriteButton = '';
+
     function HandlleSwitchButton(param: string){
         switch(props.class) {
             case 'instagram-btn':
+                WriteButton = 'Instagram';
                 return(
                     <FaInstagram fontSize={props.size} className='icon-button' />
-                )
+                    )
                 break;
             
             case 'whatsapp-btn':
+                WriteButton = 'Whatsapp'
                 return(
                     <BsWhatsapp fontSize={props.size} className='icon-button' />
                 )
                 break;
         
+            case 'github-btn':
+                WriteButton = 'GitHub'
+                return(
+                    <FiGithub fontSize={props.size} className='icon-button' />
+                )
+            break;
+
             case 'linkedin-btn':
+                WriteButton = 'Linkedin'
                 return(
                     <AiOutlineLinkedin fontSize={props.size} className='icon-button' />
                 )
             break;
 
             case 'discord-btn':
+                WriteButton = 'Discord'
                 return(
                     <TbBrandDiscord fontSize={props.size} className='icon-button' />
-                )
-            break;
-
-            case 'github-btn':
-                return(
-                    <FiGithub fontSize={props.size} className='icon-button' />
-                )
-            break;
-
-            default:
-                break;
-        }
-    }
-    
-    function HandlleSwitchString(param: string){
-        switch(props.class) {
-            case 'instagram-btn':
-                return(
-                    'Instagram'
-                )
-                break;
-            
-            case 'whatsapp-btn':
-                return(
-                    'Whatsapp'
-                )
-                break;
-        
-            case 'linkedin-btn':
-                return(
-                    'Linkedin'
-                )
-            break;
-
-            case 'discord-btn':
-                return(
-                    'Discord'
-                )
-            break;
-
-            case 'github-btn':
-                return(
-                    'GitHub'
                 )
             break;
 
@@ -86,9 +57,9 @@ export function Button(props: PropsButon){
     }
 
     return(
-        <button className={props.class}>
+        <a href={props.link} target="_blank" className={props.class}>
             {HandlleSwitchButton(props.class)}
-            {HandlleSwitchString(props.class)}
-        </button>
+            {WriteButton}
+        </a>
     )
 }
