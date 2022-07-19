@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.scss'
 import { Logo } from '../Logo'
 import { FaInstagram } from 'react-icons/fa'
+import { Button } from '../components/buttons'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,8 @@ function App() {
       </div>
 
       <div className='grid-buttons'>
-        <button><FaInstagram fontSize={20} className='icon-button'/>Instagram</button>
+        <Button class='instagram-btn' size={20} />
+        {/* <button><FaInstagram fontSize={20} className='icon-button'/>Instagram</button> */}
       </div>
     </div>
   )
