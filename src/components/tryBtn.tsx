@@ -4,14 +4,17 @@ import { AiOutlineLinkedin } from 'react-icons/ai'
 import { TbBrandDiscord } from 'react-icons/tb'
 import { FiGithub } from 'react-icons/fi'
 
+import * as Icons from 'react-icons'
+
 type PropsButon = {
     class: string,
     link: string,
     size: number,
+    icon: string
 }
 
-export function Button(props: PropsButon){
-    
+export function TryButton(props: PropsButon){
+    const MenuIcon = (Icons as any)[props.icon];
     var WriteButton = '';
 
     function HandlleSwitchButton(param: string){
@@ -19,7 +22,7 @@ export function Button(props: PropsButon){
             case 'instagram-btn':
                 WriteButton = 'Instagram';
                 return(
-                    <FaInstagram fontSize={props.size} className='icon-button icon-button' />
+                    <FaInstagram fontSize={props.size} className='icon-button' />
                     )
                 break;
             
@@ -58,8 +61,10 @@ export function Button(props: PropsButon){
 
     return(
         <a href={props.link} target="_blank" className={props.class}>
-            {HandlleSwitchButton(props.class)}
-            {WriteButton}
+            {/* {HandlleSwitchButton(props.class)} */}
+            <MenuIcon size={props.size} className='icon-button icon-button'/>
+            {/* {WriteButton} */}
+            {props.icon}
         </a>
     )
 }
