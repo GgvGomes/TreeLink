@@ -1,6 +1,7 @@
 @import '../styles/_buttons.scss';
 
 .box {
+    z-index: 999;
     min-height: 10vh;
     width: 50vw;
     // margin: 100px auto;

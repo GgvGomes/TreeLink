@@ -1,20 +1,42 @@
-import { useState } from 'react'
-import './App.scss'
-import { Logo } from '../Logo'
-import { FaInstagram } from 'react-icons/fa'
-import { Button } from '../components/buttons'
+// import { Logo } from '../Logo'
 
-type Buttons = {
-  name: string,
-  class:string;
-  link:string;
-  size:number;
-}[]
+import { Button } from '../components/buttons'
+import { List } from '../components/list'
+import { Squares } from '../components/squares'
+
+import './App.scss'
+import '../styles/_squares.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const ulSquares = document.querySelector("ul.squares")
 
-  const Btns: Buttons = [
+  for(let i = 0; i < 11; i++){
+    console.log('squere' + i)
+      const li = document.createElement("li");
+  
+      const size = Math.floor(Math.random() * (120 - 10) + 10);
+      
+      li.style.width = `${size}px`;
+      li.style.height = `${size}px`;
+      li.style.bottom = `-${size}px`;
+  
+      const position = Math.random() * (99 - 1) + 1
+      li.style.left = `${position}%`;
+  
+      // const delay = Math.random() * (5 - 0.1) + 0.1
+      // li.style.animationDelay = `${delay}s`; 
+  
+      const duration = Math.random() * (24 - 12) + 12
+      li.style.animationDuration = `${duration}s`;
+      
+      // const duration = Math.random() * (24 - 12) + 12
+      li.style.animationTimingFunction = `cubic-bezier(${Math.random(), Math.random(), Math.random(), Math.random()})`;	
+  
+      ulSquares?.appendChild(li)
+  }
+  
+
+  const Btns = [
     {
       name: 'Instagram',
       class: 'instagram-btn',
@@ -47,33 +69,64 @@ function App() {
     // }
   ]
 
-  return (
-    <div className='box'>
-      <div className='grid-avatar'>
-        <img
-          className='avatar'
-          src="https://avatars.githubusercontent.com/u/80273727?v=4"
-          alt="avatar"
-        />
-        <strong>Gabriel Gomes Vieira</strong>
-        <small>Web developer</small>
+  const ListItems = [
+    {
+      title: 'Dominated Languages',
+      items: [
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'Java Script' },
+        { name: 'Type Script' },
+        { name: 'React' },
+        { name: 'PHP' },
+        { name: 'C#' },
+      ]
+    }
+  ]
 
+  return (
+    <>
+      <div className='box'>
+        <div className='grid-avatar'>
+          <img
+            className='avatar'
+            src="https://avatars.githubusercontent.com/u/80273727?v=4"
+            alt="avatar"
+          />
+          <strong>Gabriel Gomes Vieira</strong>
+          <small>Web developer</small>
+
+        </div>
+
+        <div className='grid-buttons'>
+          {/* <Button class='instagram-btn' size={20} /> */}
+          {Btns.map(btn => {
+            return(
+              <Button 
+                key={btn.name}
+                class={btn.class}
+                size={btn.size}
+                link={btn.link}
+              />
+            )
+          })}
+        </div>
       </div>
 
-      <div className='grid-buttons'>
-        {/* <Button class='instagram-btn' size={20} /> */}
-        {Btns.map(btn => {
+      {/* <div className="grid-list">
+        {ListItems.map(item => {
           return(
-            <Button 
-              key={btn.name}
-              class={btn.class}
-              size={btn.size}
-              link={btn.link}
+            <List
+              key={item.title}
+              title={item.title}
+              items={item.items}
             />
           )
         })}
-      </div>
-    </div>
+      </div> */}
+
+      <Squares />
+    </>
   )
 }
 
