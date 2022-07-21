@@ -2,7 +2,7 @@
 
 .box {
     min-height: 10vh;
-    width: 45vw;
+    width: 50vw;
     // margin: 100px auto;
     background-color: whitesmoke;
     border-radius: 10px;
@@ -13,9 +13,9 @@
     align-items: center;
     flex-wrap: wrap;
 
-    @media screen and (max-width: 500px) {
-        width: 60vw;
-        min-height: 20vh;
+    @media screen and (max-width: 600px) {
+        width: 65vw;
+        min-height: 40vh;
     }
 
     @media screen and (max-width: 350px) {
