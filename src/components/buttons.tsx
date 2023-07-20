@@ -1,5 +1,5 @@
 import { FaInstagram } from 'react-icons/fa'
-import { BsWhatsapp } from 'react-icons/bs'
+import { BsTwitter, BsWhatsapp } from 'react-icons/bs'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { TbBrandDiscord } from 'react-icons/tb'
 import { FiGithub } from 'react-icons/fi'
@@ -50,6 +50,12 @@ export function Button(props: PropsButon){
                     <TbBrandDiscord fontSize={props.size} className='icon-button' />
                 )
             break;
+
+            case 'twitter-btn':
+                WriteButton = 'Twitter'
+                return(
+                    <BsTwitter fontSize={props.size} className='icon-button' />
+                )
 
             default:
                 break;

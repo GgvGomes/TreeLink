@@ -1,7 +1,6 @@
 // import { Logo } from '../Logo'
 
 import { Button } from '../components/buttons'
-import { List } from '../components/list'
 import { Squares } from '../components/squares'
 
 import './App.scss'
@@ -11,7 +10,6 @@ function App() {
   const ulSquares = document.querySelector("ul.squares")
 
   for(let i = 0; i < 11; i++){
-    console.log('squere' + i)
       const li = document.createElement("li");
   
       const size = Math.floor(Math.random() * (120 - 10) + 10);
@@ -47,6 +45,12 @@ function App() {
       name: 'Whatsapp',
       class: 'whatsapp-btn',
       link: 'https://contate.me/gomesGabriel',
+      size: 20
+    },
+    {
+      name: 'Twitter',
+      class: 'twitter-btn',
+      link: 'https://twitter.com/Gomes_GZz',
       size: 20
     },
     {
