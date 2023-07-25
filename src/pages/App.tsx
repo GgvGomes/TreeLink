@@ -65,6 +65,18 @@ function App() {
       link: 'https://www.linkedin.com/in/gabriel-gomes-vieira-84a040198/',
       size: 22
     },
+    {
+      name: 'My Website',
+      class: 'profile-btn',
+      link: 'https://gomess.vercel.app/',
+      size: 22
+    },
+    {
+      name: 'CodePen',
+      class: 'codepen-btn',
+      link: 'https://codepen.io/GgvGomes',
+      size: 22
+    },
     // {
     //   name: 'Discord',
     //   class: 'discord-btn',
