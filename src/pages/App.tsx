@@ -36,6 +36,12 @@ function App() {
 
   const Btns = [
     {
+      name: 'My Website',
+      class: 'profile-btn',
+      link: 'https://gomess.vercel.app/',
+      size: 22
+    },
+    {
       name: 'Instagram',
       class: 'instagram-btn',
       link: 'https://www.instagram.com/gomes_gabriel05/',
@@ -63,12 +69,6 @@ function App() {
       name: 'Linkedin',
       class: 'linkedin-btn',
       link: 'https://www.linkedin.com/in/gabriel-gomes-vieira-84a040198/',
-      size: 22
-    },
-    {
-      name: 'My Website',
-      class: 'profile-btn',
-      link: 'https://gomess.vercel.app/',
       size: 22
     },
     {
