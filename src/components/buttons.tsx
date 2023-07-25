@@ -43,14 +43,17 @@ export function Button(props: PropsButon) {
       case 'twitter-btn':
         WriteButton = 'Twitter';
         return <BsTwitter fontSize={props.size} className="icon-button" />;
+        break;
 
       case 'profile-btn':
-        WriteButton = 'Profile';
+        WriteButton = 'My Website';
         return <FaPersonBooth fontSize={props.size} className="icon-button" />;
+        break;
 
       case 'codepen-btn':
-        WriteButton = 'Profile';
+        WriteButton = 'CodePen';
         return <FiCodepen fontSize={props.size} className="icon-button" />;
+        break;
 
       default:
         break;
