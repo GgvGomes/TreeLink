@@ -7,7 +7,7 @@ This app is built with Vite, Scss, React.
 
 <br/><br/>
 
-#Description
+# Description
 This application is just to store my important or social media links. If you also want a treelink, I can make it available.
 
 <p align="center">
