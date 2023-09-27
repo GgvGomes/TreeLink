@@ -8,7 +8,8 @@ This app is built with Vite, Scss, React.
 <br/><br/>
 
 # Description
-This application is just to store my important or social media links. If you also want a treelink, I can make it available.
+This application is just to store my important or social media links. If you also want a treelink, I can make it available. <br/>
+📱This repository is also responsive for mobile devices!
 
 <p align="center">
  <a href="#roadmap">React</a> • 
