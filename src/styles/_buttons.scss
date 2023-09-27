@@ -5,6 +5,7 @@
     .icon-button{
         margin-top: 1px;
     }
+    border: 1px solid #bc1888;
 }
 
 .whatsapp-btn {
@@ -29,6 +30,9 @@
 
 .codepen-btn{
     background-color: rgb(49, 49, 53);
+    &:hover span{
+        color: rgb(151, 22, 236)!important;
+    }
 }
 
 .twitter-btn{

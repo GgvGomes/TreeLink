@@ -62,8 +62,10 @@ export function Button(props: PropsButon) {
 
   return (
     <a href={props.link} target="_blank" className={props.class}>
-      {HandlleSwitchButton(props.class)}
-      {WriteButton}
+      <span>
+        {HandlleSwitchButton(props.class)}
+        {WriteButton}
+      </span>
     </a>
   );
 }
