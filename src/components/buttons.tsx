@@ -1,7 +1,7 @@
 import { FaInstagram, FaPersonBooth } from 'react-icons/fa';
 import { BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import { AiOutlineLinkedin } from 'react-icons/ai';
-import { TbBrandDiscord } from 'react-icons/tb';
+import { TbBrandDiscord, TbCloudComputing } from 'react-icons/tb';
 import { FiCodepen, FiCodesandbox, FiGithub } from 'react-icons/fi';
 
 type PropsButon = {
@@ -47,7 +47,7 @@ export function Button(props: PropsButon) {
 
       case 'profile-btn':
         WriteButton = 'My Website';
-        return <FaPersonBooth fontSize={props.size} className="icon-button" />;
+        return <TbCloudComputing fontSize={props.size} className="icon-button" />;
         break;
 
       case 'codepen-btn':
