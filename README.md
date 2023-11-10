@@ -9,7 +9,8 @@ This is my website to store my social media links and other important ones. It w
 ## In Devices Mobile
 
 <p align="center">
-![image](https://github.com/GgvGomes/TreeLink/assets/80273727/02a7ed02-7c15-4e33-b10d-621d85c81f27)
+![image](https://github.com/GgvGomes/TreeLink/assets/80273727/38370653-30db-405e-a3b4-40381a6347b1)
+
 </p>
 
 # Description
