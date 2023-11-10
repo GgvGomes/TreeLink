@@ -1,22 +1,31 @@
 # TreeLink
 
-This app is built with Vite, Scss, React.
-<br/><br/>
+This is my website to store my social media links and other important ones. It will soon receive improvements!😊
+
+## Presentation
 
 ![image](https://github.com/GgvGomes/TreeLink/assets/80273727/2d152cc8-e665-49d0-901f-df2aab3ee72d)
 
-<br/><br/>
-
 # Description
-This application is just to store my important or social media links. If you also want a treelink, I can make it available. <br/>
+
+If you also want a treelink, I can make it available. (Soon you will just have to add a JSON file to change the links) <br/>
 📱This repository is also responsive for mobile devices!
 
+## Why?
+
+I needed a linktree and I also wanted to code something quickly in react, in short the perfect combination!!
+
+## Finally
+
+This app was built with Vite, Scss, React.
+
 <p align="center">
- <a href="#roadmap">React</a> • 
- <a href="#contribuicao">Vite</a> • 
- <a href="#tecnologias">Front-end</a> • 
- <a href="#licenc-a">TypeScript</a> • 
- <a href="#autor">Gomes</a>
+ <a href="#">React</a> • 
+ <a href="#">Vite</a> • 
+ <a href="#">Front-end</a> • 
+ <a href="#">Scss</a> • 
+ <a href="#">TypeScript</a> • 
+ <a href="#autor">Mrs. Gomes</a>
 </p>
 
 <br/><br/>
